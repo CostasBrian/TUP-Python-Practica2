@@ -1,22 +1,19 @@
 """Bloque IF, operadores lógicos, función max y operador ternario."""
 
-print("------------------Aca empieza el codigo---------------------------------")
+print("------------------Aca empieza el codigo--------------------------------")
 
-def maximo_basico(a: float, b: float) -> float:
-    if a > b:
-        return a
-    if b > a:
-        return b
-
-
-
-    """Toma dos números y devuelve el mayor.
+"""Toma dos números y devuelve el mayor.
 
     Restricciones:
         - Utilizar IF
         - No utilizar ELSE
         - No utilizar la función max
-    """
+"""
+def maximo_basico(a: float, b: float) -> float:
+    if a > b:
+        return a
+    if b > a:
+        return b
 
 
 

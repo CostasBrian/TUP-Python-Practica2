@@ -1,5 +1,5 @@
 """Expresiones Booleanas."""
-print("------------------Aca empieza el codigo---------------------------------")
+print("------------------Aca empieza el codigo--------------------------------")
 """Toma un string y devuelve un booleano en base a si letra es una vocal o
     no.
 

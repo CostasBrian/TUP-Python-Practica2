@@ -1,6 +1,6 @@
 """Comparaciones Encadenadas, Cantidad Arbitraria de Parámetros, Recursividad.
 """
-print("------------------Aca empieza el codigo---------------------------------")
+print("------------------Aca empieza el codigo--------------------------------")
 
 """Toma 3 números y devuelve el máximo.
 

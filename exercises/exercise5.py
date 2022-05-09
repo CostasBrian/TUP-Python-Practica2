@@ -1,6 +1,6 @@
 """For, Sum, Reduce."""
 
-print("------------------Aca empieza el codigo---------------------------------")
+print("------------------Aca empieza el codigo--------------------------------")
 
 def sumatoria_basico(n: int) -> int:
     suma = 0

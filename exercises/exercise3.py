@@ -1,5 +1,5 @@
 """Único return vs múltiples return."""
-print("------------------Aca empieza el codigo---------------------------------")
+print("------------------Aca empieza el codigo--------------------------------")
 
 from typing import Union
 
