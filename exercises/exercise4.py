@@ -12,7 +12,7 @@ print("------------------Aca empieza el codigo---------------------------------"
     Referencia: https://docs.python.org/3/library/stdtypes.html#string-methods
 """
 def es_vocal_if(letra: str) -> bool:
-    string = str.lower(letra)
+    string = letra.lower()
     if string == "a":
         return True
     if string == "e":
@@ -48,19 +48,12 @@ assert es_vocal_if("E")
     Referencia: https://docs.python.org/3/reference/expressions.html#membership-test-operations # noqa: E501
 """
 def es_vocal_if_in(letra: str) -> bool:
-    string = str.lower(letra)
-    for x in string:
-        if x == "a":
-            return True
-        if x == "e":
-            return True
-        if x == "i":
-            return True
-        if x == "o":
-            return True
-        if x == "u":
-            return True
-        return False
+    string = letra.lower()
+    vocales = "aeiou"
+    if string in vocales:
+        return True
+    return False
+    
 
 # NO MODIFICAR - INICIO
 assert es_vocal_if_in("a")
@@ -80,7 +73,10 @@ Restricciónes:
     - No utilizar listas.
 """
 def es_vocal_in(letra: str) -> bool:
-
+    string = letra.lower()
+    vocales = "aeiou"
+    verdad = string in vocales
+    return verdad
 
 
 # NO MODIFICAR - INICIO
