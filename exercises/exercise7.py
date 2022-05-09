@@ -1,21 +1,30 @@
 """Any y Sets."""
+print("------------------Aca empieza el codigo--------------------------------")
 
 from typing import Any, Iterable
-
-
-def superposicion_basico(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:  # noqa: E501
-    """Toma dos listas y devuelve un booleano en base a si tienen al menos 1
+"""Toma dos listas y devuelve un booleano en base a si tienen al menos 1
     elemento en común.
 
     Restricciones:
         - Utilizar dos bucles FOR anidados.
         - Utilizar dos returns.
-    """
+"""
+
+def superposicion_basico(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:  # noqa: E501
+    verdad = False
+    for x in lista_1:
+        for z in lista_2:
+            if any(lista_1) == any(lista_2):
+                verdad = True
+                print(verdad)
+    print(verdad)
+    return verdad    
+                      
 
 
 # NO MODIFICAR - INICIO
 test_list = [1, "hello", 35.20]
-assert superposicion_basico(test_list, (2, "world", 35.20))
+assert superposicion_basico(test_list, (2, "world5", 3555.20))
 assert not superposicion_basico(test_list, (2, "world", 30.85))
 # NO MODIFICAR - FIN
 
@@ -30,7 +39,9 @@ def superposicion_in(lista_1: Iterable[Any], lista_2: Iterable[Any]) -> bool:
         - Utilizar un único bucle FOR.
         - Utilizar dos returns.
     """
-
+    for x in lista_1:
+        
+        
 
 # NO MODIFICAR - INICIO
 test_list = [1, "hello", 35.20]
