@@ -1,10 +1,9 @@
 """Sum, Compresión de Listas, Map, Filter, Reduce."""
-
+print("------------------Aca empieza el codigo--------------------------------")
 from typing import Iterable
+print("------------------Aca empieza el codigo--------------------------------")
 
-
-def suma_cubo_pares_for(numeros: Iterable[int]) -> int:
-    """Toma una lista de números, los eleva al cubo, y devuelve la suma de
+"""Toma una lista de números, los eleva al cubo, y devuelve la suma de
     los elementos pares.
 
     Restricciones:
@@ -14,7 +13,20 @@ def suma_cubo_pares_for(numeros: Iterable[int]) -> int:
     Referencias:
         - https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions # noqa: E501
         - https://docs.python.org/3/library/functions.html#sum
-    """
+"""
+print("------------------Aca empieza el codigo--------------------------------")
+def suma_cubo_pares_for(numeros: Iterable[int]) -> int:
+    squares = []
+    suma = 0
+    for x in numeros:
+        squares.append(x**2)
+        print(x**2)
+    for i in squares:
+        suma = suma + squares[i]
+        print(suma)
+    return suma
+print(0)
+    
 
 
 # NO MODIFICAR - INICIO
@@ -24,15 +36,16 @@ assert suma_cubo_pares_for([1, 2, 3, 4, 5, 6]) == 288
 
 ###############################################################################
 
-
-def suma_cubo_pares_sum_list(numeros: Iterable[int]) -> int:
-    """Re-Escribir utilizando comprension de listas (debe resolverse en 1
+"""Re-Escribir utilizando comprension de listas (debe resolverse en 1
     línea) y la función built-in sum.
 
     Referencias:
         - https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions # noqa: E501
         - https://docs.python.org/3/library/functions.html#sum
-    """
+"""
+def suma_cubo_pares_sum_list(numeros: Iterable[int]) -> int:
+    
+    
 
 
 # NO MODIFICAR - INICIO

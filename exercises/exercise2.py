@@ -12,23 +12,14 @@ print("------------------Aca empieza el codigo--------------------------------")
 
     Referencia: https://docs.python.org/3/reference/expressions.html#comparisons # noqa: E501
 """
-"""
-global mayor
-def maximo_encadenado(a: float, b: float, c: float) -> float:
-    if b > a  and b > c:
-        mayor = b
-        print(mayor, "1")
-        return mayor
-    elif a > b and a > c:
-        mayor = a
-        print(mayor, "2")
-        return mayor
-    elif c > a  and c> b:
-        mayor = c
-        print(mayor, "3")
-        return mayor
 
-    
+def maximo_encadenado(a: float, b: float, c: float) -> float:
+    if b < a > c:
+        return a
+    if a < b > c:
+        return b
+    return c
+        
 
 # NO MODIFICAR - INICIO
 assert maximo_encadenado(1, 10, 5) == 10
@@ -44,7 +35,7 @@ assert maximo_encadenado(24, 18, 9) == 24
 assert maximo_encadenado(24, 18, 18) == 24
 # NO MODIFICAR - FIN
 
-"""
+
 ###############################################################################
 
 """Re-escribir para que tome 4 parámetros, utilizar la función max.
