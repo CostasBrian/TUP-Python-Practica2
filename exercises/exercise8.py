@@ -5,7 +5,6 @@ base de datos y se quieren combinar estas listas para que luego puedan crearse
 los objetos de la capa de negocio.
 """
 from typing import Any, List, Tuple
-print("------------------Aca empieza el codigo--------------------------------")
 
 nombre_articulos = ["ventana", "lámpara", "shampoo"]
 precio_articulos = [100.48, 16.42, 5.20]

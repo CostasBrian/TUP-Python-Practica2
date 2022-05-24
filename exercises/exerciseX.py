@@ -11,14 +11,16 @@ print("------------------Aca empieza el codigo--------------------------------")
         - Resolver de manera recursiva
 """
 def maximo_recursivo(*args) -> float:
-    print(len(args))
     if len(args) == 1:
-        max = args
+        max = args[0]
         return max
     else:
-        m = Max(*args)
-        return m if m > list[0] else list[0]
-
+        for i in args:
+            if args[i] > args[i+1]:
+                m = args[i]
+            else:
+                maximo_recursivo(*args) 
+    return m
 
 
 # NO MODIFICAR - INICIO
