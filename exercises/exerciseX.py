@@ -1,16 +1,24 @@
 from typing import List, Union
 
 ###############################################################################
+print("------------------Aca empieza el codigo--------------------------------")
 
-
-def maximo_recursivo(*args) -> float:
-    """Toma una cantidad arbitraria de números y devuelve el mayor.
+"""Toma una cantidad arbitraria de números y devuelve el mayor.
 
     Restricciónes:
         - No utilizar la función max
         - No utilizar la ninguna otra función salvo maximo_recursivo
         - Resolver de manera recursiva
-    """
+"""
+def maximo_recursivo(*args) -> float:
+    print(len(args))
+    if len(args) == 1:
+        max = args
+        return max
+    else:
+        m = Max(*args)
+        return m if m > list[0] else list[0]
+
 
 
 # NO MODIFICAR - INICIO

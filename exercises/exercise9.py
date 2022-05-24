@@ -1,7 +1,6 @@
 """Sum, Compresión de Listas, Map, Filter, Reduce."""
-print("------------------Aca empieza el codigo--------------------------------")
+
 from typing import Iterable
-print("------------------Aca empieza el codigo--------------------------------")
 
 """Toma una lista de números, los eleva al cubo, y devuelve la suma de
     los elementos pares.
@@ -15,19 +14,18 @@ print("------------------Aca empieza el codigo--------------------------------")
         - https://docs.python.org/3/library/functions.html#sum
 """
 print("------------------Aca empieza el codigo--------------------------------")
+
+numeros = [1, 2, 3, 4, 5, 6]
 def suma_cubo_pares_for(numeros: Iterable[int]) -> int:
     squares = []
     suma = 0
     for x in numeros:
-        squares.append(x**2)
-        print(x**2)
+        squares.append(x**3)
     for i in squares:
-        suma = suma + squares[i]
-        print(suma)
+        if i % 2 == 0 :
+            suma = suma + i
     return suma
-print(0)
     
-
 
 # NO MODIFICAR - INICIO
 assert suma_cubo_pares_for([1, 2, 3, 4, 5, 6]) == 288
@@ -44,7 +42,7 @@ assert suma_cubo_pares_for([1, 2, 3, 4, 5, 6]) == 288
         - https://docs.python.org/3/library/functions.html#sum
 """
 def suma_cubo_pares_sum_list(numeros: Iterable[int]) -> int:
-    
+    return sum((x**3) for x in numeros if x**3 % 2 ==0)
     
 
 
@@ -65,7 +63,7 @@ Escribir una función lambda que eleve los elementos al cubo
 Restricción: Utilizar List, map y lambda y la variable numeros
 """
 
-numeros_al_cubo =  # Completar
+numeros_al_cubo = list(map(lambda x: x**3 , numeros))
 
 """
 Escribir una función lambda que permita filtrar todos los elementos pares
@@ -73,7 +71,7 @@ Escribir una función lambda que permita filtrar todos los elementos pares
 Restricción: Utilizar List, filter, lambda y la variable numeros_al_cubo
 """
 
-numeros_al_cubo_pares =  # Completar
+numeros_al_cubo_pares =  list(filter(lambda x: x % 2==0 , numeros_al_cubo))
 
 
 """
@@ -84,7 +82,7 @@ Restricción: Utilizar reduce, lambda y la variable numeros_al_cubo_pares
 
 from functools import reduce  # noqa: E402
 
-suma_numeros_al_cubo_pares =  # Completar
+suma_numeros_al_cubo_pares =  reduce(lambda x, y: x + y, numeros_al_cubo_pares)
 
 
 # NO MODIFICAR - INICIO
